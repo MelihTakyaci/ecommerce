@@ -49,15 +49,15 @@ const Filters = ({ categories }: { categories: Category[] }) => {
         <div className={classes.categories}>
           <RadioButton
             label="Latest"
-            value="-createdAt"
-            isSelected={sort === '-createdAt'}
+            value="-actualPrice"
+            isSelected={sort === '-actualPrice'}
             onRadioChange={handleSort}
             groupName="sort"
           />
           <RadioButton
             label="Oldest"
-            value="createdAt"
-            isSelected={sort === 'createdAt'}
+            value="actualPrice"
+            isSelected={sort === 'actualPrice'}
             onRadioChange={handleSort}
             groupName="sort"
           />

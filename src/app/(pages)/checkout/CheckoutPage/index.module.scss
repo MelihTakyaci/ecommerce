@@ -32,14 +32,15 @@
 }
 
 .orderTotal {
-  margin-top: var(--base);
+  margin-top: calc(var(--base) *1.5);
   font-weight: 600;
   text-align: end;
   display: flex;
+  border-radius: 0.75rem;
   justify-content: space-between;
   padding: 24px;
   margin-bottom: 60px;
-  background-color: var(--color-dark-50);
+  background-color: var(--color-white-500-20);
 }
 
 .payment {

@@ -3,13 +3,13 @@
 .actions {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: calc(var(--base) / 2);
+  padding: 0.5rem 0;
 
   @include mid-break {
     flex-direction: column;
-    align-items: flex-start;
   }
 }
 
@@ -19,7 +19,9 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  font-size: 18px;
+  padding: 0.225rem 0.225rem;
+  background-color: var(--color-dark-500-50);
+  border-radius: 0.250rem;
 
   > * {
     margin: 0;

@@ -8,6 +8,12 @@
   background-color: var(--color-white-500-20);
   text-align: center;
   text-decoration: none;
+  transition: 150ms;
+}
+
+.card:hover{
+  background-color: var(--color-white-500-30);
+  box-shadow: 0px 0px 8px var(--color-white-500-30);
 }
 
 .content {
