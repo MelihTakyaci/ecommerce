@@ -3,6 +3,7 @@
 .container {
   width: 100%;
   margin: 50px 0;
+  text-decoration: none;
 
   @include small-break {
     margin-top: 30px;
@@ -23,17 +24,28 @@
 }
 
 .nav {
-  border: 1px solid var(--color-dark-50);
+  border: 2px solid var(--color-dark-50);
   display: flex;
   flex-direction: column;
   height: min-content;
-  border-radius: 10px;
+  border-radius: 0.725rem;
 }
 
 .navItem {
   display: flex;
   gap: 12px;
-  padding: 20px;
+  padding: 1rem;
+  text-decoration: none;
+  transition: 150ms;
+}
+.nav li:hover:nth-child(4){
+  background-color: var(--color-white-500-05);
+  border-bottom-left-radius: 0.725rem;
+  border-bottom-right-radius: 0.725rem;
+}
+
+.navItem:hover{
+  background-color: var(--color-white-500-05);
 }
 
 .personalInfo {

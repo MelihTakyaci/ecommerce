@@ -23,7 +23,7 @@ export const CartLink: React.FC<{
       <Fragment>
         Cart
         {typeof length === 'number' && length > 0 && (
-          <small className={classes.quantity}>({length})</small>
+          <small className={classes.quantity}>{length}</small>
         )}
       </Fragment>
     </Link>

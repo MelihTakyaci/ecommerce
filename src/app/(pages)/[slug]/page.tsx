@@ -3,7 +3,8 @@ import { Metadata } from 'next'
 import { draftMode } from 'next/headers'
 import { notFound } from 'next/navigation'
 
-import { Category, Page } from '../../../payload/payload-types'
+import type { Page } from '../../../payload/payload-types'
+import { Category } from '../../../payload/payload-types'
 import { staticHome } from '../../../payload/seed/home-static'
 import { fetchDoc } from '../../_api/fetchDoc'
 import { fetchDocs } from '../../_api/fetchDocs'
@@ -37,7 +38,6 @@ export default async function Page({ params: { slug = 'home' } }) {
       slug,
       draft: isDraftMode,
     })
-
     categories = await fetchDocs<Category>('categories')
   } catch (error) {
     // when deploying this template on Payload Cloud, this page needs to build before the APIs are live
@@ -68,6 +68,7 @@ export default async function Page({ params: { slug = 'home' } }) {
           <Gutter className={classes.home}>
             <Categories categories={categories} />
             <Promotion />
+            <Blocks blocks={page?.layout} disableTopPadding={true} />
           </Gutter>
         </section>
       ) : (

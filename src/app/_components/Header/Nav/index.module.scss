@@ -2,7 +2,7 @@
 
 .nav {
   display: flex;
-  gap: calc(var(--base) / 4) var(--base);
+  gap: calc(var(--base) / 6) var(--base);
   align-items: center;
   flex-wrap: wrap;
   opacity: 1;
@@ -11,9 +11,14 @@
 
   > * {
     text-decoration: none;
+    padding: 5px 10px !important;
+    transition: 100ms;
+    border-radius: 0.515rem;
+  }
+  > *:hover{
+    background-color: var(--color-white-500-05);
   }
 }
-
 .hide {
   opacity: 0;
   visibility: hidden;
