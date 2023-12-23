@@ -1,22 +1,22 @@
 export const inclusions = [
   {
-    title: 'Free Shipping',
-    description: 'Free shipping for order above $150',
+    title: 'Embark on a Seamless Journey:',
+    description: 'Indulge in the luxury of free shipping on all orders surpassing $50, ensuring your curated selections reach you with unparalleled ease.',
     icon: '/assets/icons/shipping.svg',
   },
   {
-    title: 'Money Guarantee',
-    description: 'Within 30 days for an exchange',
+    title: 'Assurance in Every Transaction:',
+    description: 'Shop with confidence knowing that you have a 14-day window for hassle-free exchanges, a testament to our dedication to your satisfaction.',
     icon: '/assets/icons/dollar.svg',
   },
   {
-    title: 'Online Support',
-    description: '24 hours a day, 7 days a week',
+    title: 'Guidance at Every Hour',
+    description: 'Experience the convenience of around-the-clock online support, providing assistance whenever you need it, day or night, making your shopping experience as effortless as it is enjoyable.',
     icon: '/assets/icons/support.svg',
   },
   {
-    title: 'Flexible Payment',
-    description: 'Pay with multiple credit cards',
+    title: 'Tailored Payment Freedom',
+    description: 'Seize control of your transactions with the freedom to pay using multiple credit cards, offering you unparalleled flexibility in managing your purchases.',
     icon: '/assets/icons/payment.svg',
   },
 ]
