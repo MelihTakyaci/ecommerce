@@ -15,6 +15,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: 200ms;
+}
+.card:hover{
+  background-color: var(--color-white-500-30);
 }
 
 .title {
@@ -22,5 +26,5 @@
   padding: 16px;
   width: 100%;
   text-align: center;
-  background-color: var(--color-dark-500);
+  background-color: var(--color-dark-500-30);
 }
