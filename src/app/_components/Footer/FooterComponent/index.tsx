@@ -18,7 +18,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
 
   return (
     <footer className={noHeaderFooterUrls.includes(pathname) ? classes.hide : ''}>
-      <Gutter>
+      {/* <Gutter>
         <ul className={classes.inclusions}>
           {inclusions.map(inclusion => (
             <li key={inclusion.title}>
@@ -35,7 +35,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
             </li>
           ))}
         </ul>
-      </Gutter>
+      </Gutter> */}
 
       <div className={classes.footer}>
         <Gutter>
